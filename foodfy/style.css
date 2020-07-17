@@ -18,6 +18,7 @@
   main {
     max-width: 940px;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   header {
@@ -33,6 +34,10 @@
  header a {
    margin-right: 30px;
    color: #111111 ;
+ }
+
+ header a:hover {
+   font-weight: bold;
  }
 
  .principal {
@@ -67,19 +72,45 @@
   margin: 67px 50px 0 150px;
  }
 
+ h2 {
+   margin: 50px 0 20px 0;
+ }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #111111;
+  margin-top: 20px;
+}
+.card p {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 5px;
+
+}
+
+.psobre {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.h2s {
+  font-size: 20px;
+color: #111111;
+}
 
 
-
-
-
-
-
-
-
-
-
-
- 
 
   footer {
     margin-top: auto;
