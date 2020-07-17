@@ -87,6 +87,12 @@
   border-radius: 15px;
 }
 
+.card img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 200ms;
+}
+
 .card h3 {
   font-size: 18px;
   color: #111111;
