@@ -38,7 +38,6 @@ header .links  {
 
 .links a:hover {
     opacity: 0.7;
-    text-decoration: underline;
     transition: 200ms;
 }
 
@@ -117,9 +116,24 @@ header .links  {
 
 .curso {
     padding: 24px;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(255, 255, 255, 0.068);
+    box-shadow: rgba(0, 0, 0, 0.363) 0 10px 10px -5px ;
     height: 400px;
     border-radius: 15px;
+    color: white;
 }
 
-.curso 
+.curso:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 300ms;
+    box-shadow: rgba(0, 0, 0, 0.801) 0 15px 20px -5px;
+}
+
+.curso img{
+    margin-top: 10vh;
+}
+
+.curso h3 {
+    padding: 10px;
+}
