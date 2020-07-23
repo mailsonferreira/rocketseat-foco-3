@@ -102,3 +102,24 @@ header .links  {
     opacity: 0.8;
     transition: 200ms;
 }
+
+/*------CONTEUDOS-------*/
+
+.cursos {
+    max-width: 940px;
+    margin: 10vh auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.curso {
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.178);
+    height: 400px;
+    border-radius: 15px;
+}
+
+.curso 
