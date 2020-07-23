@@ -16,4 +16,5 @@ document.querySelector('.fa-window-maximize').addEventListener('click', function
 document.querySelector('.fa-window-close').addEventListener('click', function() {
     modalOverlay.classList.remove('ativo')
     modalOverlay.classList.remove('max')
+    modalOverlay.querySelector('iframe').src = ''
 })
