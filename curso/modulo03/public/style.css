@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&display=swap');
+
+
+:root {
+    --color-verde: #50fa7b;
+    --color-rocket: #7159c1 ;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #282a36;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color:var(--color-verde);
+    transition: 700ms;
+}
+
+#wrapper{
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img {
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--color-verde);
+    margin-bottom: 32px;
+}
+
+#wrapper h1 {
+   font-size: 42px;
+   line-height: 52px;
+   font-weight: bold; 
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#footer {
+    margin-top: 100px;
+}
+
+#footer a {
+   font-size: 24px;
+   text-decoration: underline;
+}
+
+#links-footer a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+/*========CARDS=======*/
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    background-color: var(--color-rocket);
+
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+
+
+.card-content,
+.card-info {
+    padding: 24px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.price {
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*==========MODAL OVERLAY==========*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+
+    opacity: 0; /*sumir modal*/
+    visibility: hidden; /*sumir modal*/
+
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*=====MODAL-OVERLAY======*/
+
+.modal-overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
