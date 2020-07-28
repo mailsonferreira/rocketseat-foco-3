@@ -21,9 +21,9 @@ server.get("/", function(req, res){
         role: "Aluno - Rocketseat",
         description: 'Cursando o bootcamp LaunchBase com Mayk Brito da <a href="https://rocketseat.com.br/" target="_blank">  Rocketseat ',
         links: [
-            {name: "Github", url: "https://github.com/mailsonferreira"},
-            {name: "Linkedin", url: "https://www.linkedin.com/in/mailson-ferreira/"},
-            {name: "Instagram", url: "https://www.instagram.com/mailsonferreira/"}
+            {name: "Github", url: "https://github.com/mailsonferreira", icon: "fab fa-github"},
+            {name: "Linkedin", url: "https://www.linkedin.com/in/mailson-ferreira/", icon: "fab fa-linkedin"},
+            {name: "Instagram", url: "https://www.instagram.com/mailsonferreira/", icon: "fab fa-instagram"}
         ]
     }
 

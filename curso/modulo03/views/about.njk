@@ -21,11 +21,10 @@
 
         {% for link in about.links %}
         
-
-        <a href="{{link.url}}" target="_blank"><i class="fab fa-github"></i> {{link.name}}</a>
+        <a href="{{ link.url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a>
+        
 
         {% endfor %}
-
     </div>
 
 
