@@ -42,6 +42,10 @@ header .links  {
 }
 
 .content {
+    max-width: 940px;
+    margin: 5vh auto;
+    border-radius: 15px;
+    box-shadow: #3b2f64 0 10px 25px -10px;
     background-color: white;
     text-align: center;
     padding: 60px;
