@@ -11,16 +11,20 @@
 
 
     <div id="wrapper">
-        <img src="https://avatars2.githubusercontent.com/u/60264180?s=400&u=03c77a61074f43b7a2c2df26913da50da89f2875&v=4" alt="">
-        <h1>Mailson Ferreira</h1>
-        <h2>Aluno - Rocketseat</h2>
-        <p>Cursando o bootcamp LaunchBase com Mayk Brito da <a href="https://rocketseat.com.br/" target="_blank">  Rocketseat </a> </p>
+        <img src="{{ about.avatar_url }}" alt="">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.role }}</h2>
+        <p>{{ about.description }} </p>
     </div>
 
     <div id="links-footer" class="links">
-        <a href="https://github.com/mailsonferreira" target="_blank"><i class="fab fa-github"></i> Github</a>
-        <a href="https://www.linkedin.com/in/mailson-ferreira/" target="_blank"> <i class="fab fa-linkedin"></i> Linkedin</a>
-        <a href="https://www.instagram.com/mailsonferreira/" target="_blank"> <i class="fab fa-instagram"></i> Instagram</a>
+
+        {% for link in about.links %}
+        
+
+        <a href="{{link.url}}" target="_blank"><i class="fab fa-github"></i> {{link.name}}</a>
+
+        {% endfor %}
 
     </div>
 
