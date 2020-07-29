@@ -4,13 +4,8 @@ const cards = document.querySelectorAll('.card')
 for (let card of cards) {
     card.addEventListener("click", function () {
         const videoID = card.getAttribute('id')
-        modalOverlay.classList.add('ativo')
-        modalOverlay.querySelector('iframe').src = `http://www.youtube.com/embed/${videoID}`
+        window.location.href = `/video?id=${videoID}`
 
     })
 }
 
-document.querySelector('.close-modal').addEventListener("click", function () {
-    modalOverlay.classList.remove('ativo')
-    modalOverlay.querySelector('iframe').src = ""
-})
